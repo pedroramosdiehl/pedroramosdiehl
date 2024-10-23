@@ -3,11 +3,25 @@
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=pedroramosdiehl&label=Profile%20views&color=0e75b6&style=flat" alt="pedroramosdiehl" /> </p>
 
+This project is my curriculum vitae. I wrote my curriculum in LaTex and you can download it in the latest release.
+
 - 🌱 I’m currently learning **AWS and Kubernetes**
 
 - 💬 Ask me about **angular, spring boot, ionic, django**
 
 - 📫 How to reach me **pedroramosdiehl@gmail.com**
+
+# About me:
+
+Computer Engineer graduated from the Federal University of Goiás (UFG), with a solid career in software development since 2019. I started my journey at CERCOMP - UFG, where I began as a research intern and currently work as a Junior Systems Architect. My experience spans both internal and external projects, working with various technologies and frameworks in a full stack model. While I currently handle the architecture of systems in maintenance alongside a team, I have a strong passion for frontend development.
+
+I have solid experience with technologies such as Angular, Ionic, Spring Boot, PHP, Docker, Kubernetes, AWS, PostgreSQL, Linux, and Git. Beyond development, I have a keen interest in infrastructure and deployment, giving me a DevOps-oriented profile. In a personal home automation project, I manage an on-premise server running Proxmox, where I maintain VMs for services like Home Assistant and other Docker-based applications, including a backend for a financial management app. My strongest skills are in Angular, Ionic, Spring Boot, and PostgreSQL.
+
+Throughout my career, I’ve worked mainly with agile methodologies, particularly Scrum, with practical experience in variations of this approach. I also have extensive experience with CI/CD, using tools like GitHub and GitLab for automation and deployment. I routinely configure CI/CD pipelines and manage deployments for the various applications under my care. When designing systems, I prefer a lean and scalable approach, emphasizing a clear separation between frontend and backend, and where applicable, using microservices. In a recent project, I adopted an architecture with a Spring Boot backend, three distinct frontends (administrative, public, and management), SSO with Keycloak, and PostgreSQL as the database.
+
+My biggest challenges came after becoming a systems architect. I realized the direct impact architectural decisions have on development, maintenance, and the overall delivery of applications. One of the most valuable lessons I've learned is that while designing an application is relatively easy, keeping it sustainable over time is the real challenge. An example of this was adopting a granular microservices architecture for a large project, where we encountered scalability issues due to the company’s infrastructure not being fully prepared to support it. This experience reinforced the importance of aligning architectural decisions with the realities of available infrastructure.
+
+I am passionate about challenges, and my next major goal is to transition further into cloud-oriented DevOps. While I have solid knowledge of on-premise approaches, I see the need to deepen my understanding of cloud tools, particularly AWS, to stay ahead of trends and industry challenges. In the long run, I see myself growing professionally, always seeking new challenges and opportunities to learn and evolve.
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
