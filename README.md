@@ -13,15 +13,33 @@ This project is my curriculum vitae. I wrote my curriculum in LaTex and you can 
 
 # About me:
 
-Computer Engineer graduated from the Federal University of Goiás (UFG), with a solid career in software development since 2019. I started my journey at CERCOMP - UFG, where I began as a research intern and currently work as a Junior Systems Architect. My experience spans both internal and external projects, working with various technologies and frameworks in a full stack model. While I currently handle the architecture of systems in maintenance alongside a team, I have a strong passion for frontend development.
+Dynamic Computer Engineer | Junior Systems Architect | Full Stack Developer
 
-I have solid experience with technologies such as Angular, Ionic, Spring Boot, PHP, Docker, Kubernetes, AWS, PostgreSQL, Linux, and Git. Beyond development, I have a keen interest in infrastructure and deployment, giving me a DevOps-oriented profile. In a personal home automation project, I manage an on-premise server running Proxmox, where I maintain VMs for services like Home Assistant and other Docker-based applications, including a backend for a financial management app. My strongest skills are in Angular, Ionic, Spring Boot, and PostgreSQL.
+I am a Computer Engineer graduated from the Federal University of Goiás (UFG) with a robust track record in software development since 2019. My professional journey began at CERCOMP - UFG as a research intern, and I have progressed to my current role as a Junior Systems Architect. My experience encompasses both internal and external projects, leveraging a diverse set of technologies and frameworks in a full stack capacity. I am particularly passionate about frontend development, which I believe is crucial for creating engaging user experiences.
 
-Throughout my career, I’ve worked mainly with agile methodologies, particularly Scrum, with practical experience in variations of this approach. I also have extensive experience with CI/CD, using tools like GitHub and GitLab for automation and deployment. I routinely configure CI/CD pipelines and manage deployments for the various applications under my care. When designing systems, I prefer a lean and scalable approach, emphasizing a clear separation between frontend and backend, and where applicable, using microservices. In a recent project, I adopted an architecture with a Spring Boot backend, three distinct frontends (administrative, public, and management), SSO with Keycloak, and PostgreSQL as the database.
+Technical Expertise
+I bring solid expertise in a wide array of technologies, including:
 
-My biggest challenges came after becoming a systems architect. I realized the direct impact architectural decisions have on development, maintenance, and the overall delivery of applications. One of the most valuable lessons I've learned is that while designing an application is relatively easy, keeping it sustainable over time is the real challenge. An example of this was adopting a granular microservices architecture for a large project, where we encountered scalability issues due to the company’s infrastructure not being fully prepared to support it. This experience reinforced the importance of aligning architectural decisions with the realities of available infrastructure.
+Frontend Development: Angular, Ionic
+Backend Development: Spring Boot, PHP, Django
+Containerization & Orchestration: Docker, Kubernetes
+Cloud Computing: AWS
+Database Management: PostgreSQL
+Operating Systems & Tools: Linux, Git
+In addition to my development skills, I possess a strong interest in infrastructure and deployment, aligning my profile with DevOps principles. I am actively engaged in a personal home automation project, where I manage an on-premise server running Proxmox. This setup supports various virtual machines for services like Home Assistant and a Docker-based backend for a financial management application.
 
-I am passionate about challenges, and my next major goal is to transition further into cloud-oriented DevOps. While I have solid knowledge of on-premise approaches, I see the need to deepen my understanding of cloud tools, particularly AWS, to stay ahead of trends and industry challenges. In the long run, I see myself growing professionally, always seeking new challenges and opportunities to learn and evolve.
+Agile Methodology & CI/CD
+Throughout my career, I have embraced agile methodologies, particularly Scrum, and have practical experience with its various adaptations. I am adept at CI/CD practices, utilizing tools such as GitHub and GitLab to automate deployment processes. My responsibilities include configuring CI/CD pipelines and managing deployments across multiple applications, ensuring efficiency and reliability.
+
+Architectural Philosophy
+When designing systems, I advocate for a lean, scalable architecture that emphasizes a clear separation between frontend and backend components. I have successfully implemented a microservices approach in my recent projects, including a complex architecture featuring a Spring Boot backend, three distinct frontends (administrative, public, and management), SSO integration with Keycloak, and PostgreSQL as the database.
+
+Growth Mindset
+Transitioning into a systems architect role has underscored the profound impact of architectural decisions on development and long-term application sustainability. One of my key lessons learned was during a project involving a granular microservices architecture, where we faced scalability challenges due to the infrastructure's limitations. This experience highlighted the importance of aligning architectural choices with organizational capabilities.
+
+I thrive on challenges and am eager to further my journey in cloud-oriented DevOps. While I have a solid foundation in on-premise solutions, I am committed to deepening my knowledge of cloud technologies, particularly AWS, to stay at the forefront of industry advancements.
+
+In the long run, I envision a continuous path of professional growth, consistently seeking new challenges and opportunities to learn and evolve in the tech landscape.
 
 <!-- <h3 align="left">Connect with me:</h3> -->
 <!-- <p align="left">pedroramosdiehl@gmail.com</p> -->
