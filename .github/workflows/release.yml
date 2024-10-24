@@ -40,7 +40,7 @@ jobs:
         run: |
           gh release create "$tag" \
               --repo="$GITHUB_REPOSITORY" \
-              --title="${GITHUB_REPOSITORY#*/} ${tag#v}" \
+              --title="Curriculum ${tag#v}" \
               --generate-notes
 
       - name: Upload Release Asset
