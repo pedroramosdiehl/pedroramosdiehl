@@ -32,26 +32,16 @@ jobs:
       - name: Rename PDF
         run: mv ./output/main.pdf ./output/pedro_ramos_diehl_vitae.pdf
 
-      - name: Create Release
+      - name: Create release
         id: create_release
-        uses: actions/create-release@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          tag_name: ${{ github.ref }}
-          release_name: Release ${{ github.ref }}
-          body: |
-            Changes in this Release
-            - ${{ github.event.head_commit.message }}
-          draft: false
-          prerelease: false
-
-      - name: Upload PDF to Release
-        uses: actions/upload-artifact@v4
-        with:
-          name: pedro_ramos_diehl_vitae.pdf
-          path: ./output/pedro_ramos_diehl_vitae.pdf
-          retention_days: 30
+          tag: ${{ github.ref_name }}
+        run: |
+          gh release create "$tag" \
+              --repo="$GITHUB_REPOSITORY" \
+              --title="${GITHUB_REPOSITORY#*/} ${tag#v}" \
+              --generate-notes
 
       - name: Upload Release Asset
         id: upload-release-asset
