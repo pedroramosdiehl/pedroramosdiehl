@@ -49,7 +49,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          upload_url: https://github.com/pedroramosdiehl/pedroramosdiehl/releases/tag/main
           asset_path: ./output/pedro_ramos_diehl_vitae.pdf
           asset_name: pedro_ramos_diehl_vitae.pdf
           asset_content_type: application/pdf
