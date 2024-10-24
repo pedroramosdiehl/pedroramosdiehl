@@ -3,7 +3,7 @@
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=pedroramosdiehl&label=Profile%20views&color=0e75b6&style=flat" alt="pedroramosdiehl" /> </p>
 
-This project is my curriculum vitae. I wrote my curriculum in LaTex and you can download it in the latest release.
+This project is my curriculum vitae. I wrote my curriculum in LaTex and you can download it in the [latest release](https://github.com/pedroramosdiehl/pedroramosdiehl/releases/latest).
 
 - 🌱 I’m currently learning **AWS and Kubernetes**
 
