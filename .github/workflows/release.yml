@@ -29,8 +29,32 @@ jobs:
             exit 1
           fi
 
-      - name: Upload main.pdf as artifact
+      - name: Rename PDF
+        run: mv ./output/main.pdf ./output/pedro_ramos_diehl_vitae.pdf
+
+      - name: Create Release
+        id: create_release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{ github.ref }}
+          release_name: Release ${{ github.ref }}
+          body: |
+            Changes in this Release
+            - ${{ github.event.head_commit.message }}
+          draft: false
+          prerelease: false
+
+      - name: Upload PDF to Release
         uses: actions/upload-artifact@v4
         with:
-          name: main-pdf
-          path: ./output/main.pdf
+          name: pedro_ramos_diehl_vitae.pdf
+          path: ./output/pedro_ramos_diehl_vitae.pdf
+          retention_days: 30
+
+      - name: Attach PDF to Release
+        uses: softprops/attach-artifacts@v1
+        with:
+          artifacts: pedro_ramos_diehl_vitae.pdf
+          target: ${{ steps.create_release.outputs.upload_url }}
