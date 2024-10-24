@@ -1,4 +1,4 @@
-name: Build and Generate PDF
+name: Build LaTeX Document
 
 on:
   push:
@@ -6,34 +6,31 @@ on:
       - main
 
 jobs:
-  build-and-generate:
+  build-latex:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v2
-
-      - name: Set up Docker Buildx
-        uses: docker/setup-buildx-action@v1
+        uses: actions/checkout@v4
 
       - name: Build Docker image
-        run: docker build -t pdf-generator .
+        run: docker build -t latex-pdf-generator .
 
-      - name: Run Docker container and generate PDF
-        id: generate_pdf
+      - name: Run LaTeX compilation
+        id: compile_latex
         run: |
-          docker run -d --name pdf-container pdf-generator sleep infinity
-          docker wait pdf-container
+          mkdir -p ./output
+          docker run --rm -v $(pwd)/output:/workspace/output latex-pdf-generator
 
-      - name: Copy main.pdf from Docker container
-        run: docker cp pdf-container:/workspace/main.pdf ./main.pdf
+      - name: Check if PDF was generated
+        run: |
+          if [ ! -f ./output/main.pdf ]; then
+            echo "PDF generation failed"
+            exit 1
+          fi
 
       - name: Upload main.pdf as artifact
         uses: actions/upload-artifact@v4
         with:
           name: main-pdf
-          path: ./main.pdf
-
-      - name: Clean up
-        if: always()
-        run: docker rm pdf-container
+          path: ./output/main.pdf

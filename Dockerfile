@@ -7,8 +7,5 @@ WORKDIR /workspace
 # Copy the LaTeX source files into the container
 COPY . /workspace
 
-# Compile the LaTeX document
-RUN pdflatex main.tex
-
 # Command to run when the container starts
-CMD ["pdflatex", "main.tex"]
+CMD ["pdflatex", "-interaction=nonstopmode", "-output-directory=output", "main.tex"]
