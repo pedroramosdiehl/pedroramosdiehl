@@ -30,7 +30,9 @@ jobs:
           fi
 
       - name: Rename PDF
-        run: mv ./output/main.pdf ./output/pedro_ramos_diehl_vitae.pdf
+        run: |
+          cat ./output/main.pdf
+          mv ./output/main.pdf ./output/pedro_ramos_diehl_vitae.pdf
 
       - name: Create release
         id: create_release
