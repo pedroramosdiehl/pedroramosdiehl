@@ -11,7 +11,7 @@ This project is my curriculum vitae. I wrote my curriculum in LaTex and you can 
 
 - 📫 How to reach me **pedroramosdiehl@gmail.com**
 
-# About me:
+## About me:
 
 Dynamic Computer Engineer | Junior Systems Architect | Full Stack Developer
 
